@@ -8,7 +8,7 @@ export default async function User() {
   const session = await getAuthSession();
 
   if (!session?.user) {
-    return <code className="text-accent">No User</code>;
+    return <code className="text-accent">Not Logged in yet !</code>;
   }
 
   return (
